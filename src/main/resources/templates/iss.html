@@ -40,7 +40,7 @@
 
 	function moveISS() {
 
-		$.getJSON('http://localhost:8080/api/issLocation', function(data) {
+		$.getJSON('https://isstrackerapp.herokuapp.com/api/issLocation', function(data) {
 			lat = data['iss_position']['latitude'];
 			lon = data['iss_position']['longitude'];
 			
